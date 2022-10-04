@@ -1,4 +1,4 @@
-for files in *.txt
+for files in $(ls *.txt)
 do
 	folderName=`echo $files | awk -F. '{print $1}'`;
 	echo $files;
