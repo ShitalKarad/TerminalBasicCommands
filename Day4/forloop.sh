@@ -1,13 +1,17 @@
 for files in *.log
 do
 	folderName=`echo $files | awk -F. '{print $1}'`;
-	echo $files;
 	echo $folderName;
-	printf "\n";
-	if [ -d $folderName ]
-	then
+	echo $files;
+		if [ -d $folderName ]
+		then
 		rm -r $folderName;
 	fi
 	mkdir $folderName;
-	cp $files $folderName/$files-6-10;
+	cp $files $folderName/;
+	echo copied files to $folderName/;
+	now=$(date +"%d_%m_%y")
+	echo "$now"
+	nfiles=$folderName-$now.log
+	mv $folderName/$files $folderName/$nfiles
 done
