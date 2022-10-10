@@ -1,0 +1,15 @@
+rC1=$(((Random%5))+1);
+rC2=$(((Random%5))+1);
+rC3=$(((Random%5))+1);
+if [ $rC1 -gt rC2 & rC1 -gt rC3]
+then 
+	echo "maximumvalue is: "$rC1;
+elif [rC2 -gt rC1 & rC2 -gt rC3]
+	echo "maximum value is :"$rC2;
+	
+elif [rC3 -gt rC1 & rC3 -gt rC2]
+    echo " maximum value is :"rC3;
+else
+    echo "minimum value is :"$1;
+	
+fi
