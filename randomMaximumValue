@@ -1,0 +1,55 @@
+rC1=$(( ( RANDOM%899 ) + 100 ));
+rC2=$(( ( RANDOM%899 ) + 100 ));
+rC3=$(( ( RANDOM%899 ) + 100 ));
+rC4=$(( ( RANDOM%899 ) + 100 ));
+rC5=$(( ( RANDOM%899 ) + 100 ));
+
+echo "rC1 value is :"$rC1;
+echo "rC2 value is :"$rC2;
+echo "rC3 value is :"$rC3;
+echo "rC4 value is :"$rC4;
+echo "rC5 value is :"$rC5;
+
+# Maximum Value logic 
+if [ $rC1 -gt $rC2 ] && [ $rC1 -gt $rC3 ] && [ $rC1 -gt $rC4 ] &&  [ $rC1 -gt $rC5 ]
+then
+   echo "maximumvalue is: "$rC1;
+
+elif [ $rC2 -gt $rC1 ] && [ $rC2 -gt $rC3 ] && [ $rC2 -gt $rC4 ] &&  [ $rC2 -gt $rC5 ]
+then
+    echo "maximum value is :"$rC2;
+
+elif [ $rC3 -gt $rC1 ] && [ $rC3 -gt $rC2 ] && [ $rC3 -gt $rC4 ] &&  [ $rC3 -gt $rC5 ]
+then
+   echo "maximumvalue is: "$rC3;
+
+elif [ $rC4 -gt $rC1 ] && [ $rC4 -gt $rC2 ] && [ $rC4 -gt $rC3 ] &&  [ $rC4 -gt $rC5 ]
+then
+   echo "maximumvalue is: "$rC4;
+   
+else
+    echo "maximum value is :"$rC5;
+fi
+
+# Minimum Value logic 
+
+if [ $rC1 -lt $rC2 ] && [ $rC1 -lt $rC3 ] && [ $rC1 -lt $rC4 ] &&  [ $rC1 -lt $rC5 ]
+then
+   echo "Minimum value is: "$rC1;
+
+elif [ $rC2 -lt $rC1 ] && [ $rC2 -lt $rC3 ] && [ $rC2 -lt $rC4 ] &&  [ $rC2 -lt $rC5 ]
+then
+    echo "Minimum value is :"$rC2;
+
+elif [ $rC3 -lt $rC1 ] && [ $rC3 -lt $rC2 ] && [ $rC3 -lt $rC4 ] &&  [ $rC3 -lt $rC5 ]
+then
+   echo "Minimum value is: "$rC3;
+
+elif [ $rC4 -lt $rC1 ] && [ $rC4 -lt $rC2 ] && [ $rC4 -lt $rC3 ] &&  [ $rC4 -lt $rC5 ]
+then
+   echo "Minimum value is: "$rC4;
+   
+else
+    echo "Minimum value is :"$rC5;
+fi
+
