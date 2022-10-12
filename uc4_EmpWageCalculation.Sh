@@ -1,4 +1,4 @@
-
+echo "wellcome to Employee wage Calculation using swich case ";
  for files in *
 do
 	ext=`echo $files | awk -F. '{print $2}'`;
