@@ -1,3 +1,4 @@
+echo "Wellcome to part time Employee wage Calculation "
 isPartTime=1;
 isFullTime=2;
 empRatePerHr=20;
