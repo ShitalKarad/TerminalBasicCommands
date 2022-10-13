@@ -1,0 +1,14 @@
+count=1;
+while [[ $count -le 11 ]]
+do
+	count=$((RANDOM%2))
+	if [ $count == 1 ] 
+	 then
+		echo "HEAD";
+	 else
+	 echo "TAIL";
+	 fi 
+	 count=$(( $count + 1 ));
+done
+
+
